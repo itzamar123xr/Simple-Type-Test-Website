@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    /* Set background gradient for the entire page */
+    background: linear-gradient(to bottom, #085078, #85d8ce);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: linear-gradient(to bottom, #ff8008, #ffc837); /* Set container background gradient */
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    width: 120%;
+    max-width: 800px;
+    height: 70%;
+    /* Adjusted top and left to center the container */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+
+
+.stats {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 14px;
+}
+
+.stats p {
+    margin-bottom: 5px;
+}
+
+#start-test,
+#stop-test {
+    margin-top: 160px; /* Adjust the margin to move the buttons down */
+}
+
+
+.result {
+    position: absolute;
+    bottom: 20px; /* Adjust bottom position */
+    right: 20px; /* Adjust right position */
+    font-size: 14px;
+    display: none;
+}
+
+
+#quote {
+    font-size: 17px;
+    margin-top: 100px;
+    white-space: pre-wrap;
+}
+
+#quote-input {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #af3131;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.result {
+    display: none;
+    margin-top: 20px;
+}
+
+.result h3 {
+    margin-bottom: 10px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper p {
+    margin-bottom: 5px;
+}
+
+.quote-chars {
+    display: inline-block;
+    padding-right: -0.5px;
+}
+
+.fail {
+    color: red;
+}
+
+.success {
+    color: green;
+}
